@@ -1,10 +1,7 @@
 import { ethers } from 'ethers';
 import { logger } from './common/logger';
-import { Greeter } from './lib/greeter';
 import { config } from './common/config';
 import { getTokenDetails } from './lib/token';
-
-logger.info(Greeter('Joe'));
 
 (async function () {
   const provider = new ethers.providers.JsonRpcProvider(config.rpcUrl);
