@@ -7,4 +7,4 @@ export const config = {
   privateKey: process.env.PRIVATE_KEY ?? '',
 };
 
-logger.info('config: %o', config);
+logger.info('config: ', config);
