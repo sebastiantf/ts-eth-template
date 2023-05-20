@@ -10,7 +10,8 @@
     "clean": "rm -rf dist",
     "dev": "yarn ts-node src/index.ts",
     "start": "yarn build && node dist/index.js",
-    "typechain": "typechain --target ethers-v5 --out-dir ./src/types './abi/*.json'"
+    "typechain": "typechain --target ethers-v5 --out-dir ./src/types './abi/*.json'",
+    "postinstall": "yarn build"
   },
   "devDependencies": {
     "@typechain/ethers-v5": "^10.2.0",
